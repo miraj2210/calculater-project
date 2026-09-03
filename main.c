@@ -47,7 +47,7 @@ int main()
             break;
         }
 
-        printf(" enter the first number: ");
+        printf("enter the first number: ");
         scanf("%d", &a);
 
         printf("enter the second number: ");
