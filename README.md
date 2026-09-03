@@ -32,16 +32,7 @@ The program allows the user to perform basic arithmetic operations such as **add
   * User input using `scanf()`
   * Output using `printf()`
 
----
 
-## 📂 Project Structure
-
-```text
-Simple-Calculator/
-│
-├── calculator.c
-└── README.md
-```
 
 ---
 
