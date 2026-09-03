@@ -38,49 +38,48 @@ int main()
         printf("\npress 5 for %");
         printf("\npress 0 for exit");
 
-        printf("enter your choice:");
+        printf("enter your choice: ");
         scanf("%d", &choice);
+
         if (choice == 0)
         {
-
             printf("program exited.");
+            break;
         }
-        {
-            printf(" enter the first number:");
-            scanf("%d", &a);
 
-            printf("enter the second number:");
-            scanf("%d", &b);
-        }
+        printf(" enter the first number: ");
+        scanf("%d", &a);
+
+        printf("enter the second number: ");
+        scanf("%d", &b);
+
         switch (choice)
         {
         case 1:
-            printf("Addition of %d and %d is %d", a, b, add(a, b));
+            printf("Addition of %d and %d is %d\n", a, b, add(a, b));
             break;
 
         case 2:
-            printf("Subtraction of %d and %d is %d", a, b, sub(a, b));
+            printf("Subtraction of %d and %d is %d\n", a, b, sub(a, b));
             break;
 
         case 3:
-            printf("Multiplication of %d and %d is %d", a, b, mul(a, b));
+            printf("Multiplication of %d and %d is %d\n", a, b, mul(a, b));
             break;
 
         case 4:
-        if(b>a){
-            printf("Error: Second number is greater than the first number.");
-        }
-        else{
-            printf("Division of %d and %d is %d", a, b, div(a, b));
-        }
-            break;
+            if (b == 0)
+            {
+                printf("b must be greater than 0");
+            }
+            else
+            {
+                printf("Division of %d and %d is %d\n", a, b, div(a, b));
+                break;
+            }
 
         case 5:
-            printf(" modulus of %d and %d is %d ", a, b, mod(a, b));
-            break;
-
-        case 0:
-            printf(" program exited.");
+            printf(" modulus of %d and %d is %d \n", a, b, mod(a, b));
             break;
 
         default:
